@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-ul: rgb(0, 0, 0);
+}
+
+html {
+    font-size: 16px;
+    /* 1rem = 16px*/
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.github svg {
+    fill: rgb(255, 255, 5);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header {
+    padding: 2rem 0;
+    opacity: 0.9;
+    width: 40rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 4.6rem;
+    background-color: rgba(0, 255, 183, 0.6);
+    backdrop-filter: blur(3px);
+    --webkit-backdrop-filter: blur(3px);
+    text-align: center;
+}
+
+.title {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+header h1>span {
+    color: #000000;
+    background-color: #fffb00;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 5rem;
+    margin-top: 1.5rem;
+}
+
+ul li {
+    width: 90vmin;
+    background-color: var(--bg-ul);
+    box-shadow: 0px 6px 45px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 0 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.project-name {
+    font-weight: bold;
+    color: #1c1c1c;
+    font-size: 1.2rem;
+    text-align: start;
+    width: 100%;
+    margin: 0 5%;
+}
+
+.project-number {
+    font-weight: bold;
+}
+
+.container-links {
+    color: #1c1c1c;
+}
+
+footer {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #202020;
+    color: #fff;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>span {
+    color: #ff0000;
+}
+
+footer>a {
+    color: #fff;
+}
+
+footer>object {
+    width: 26px;
+}
+
+.title {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    font-size: 3rem;
+    cursor: pointer;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.btn::before {
+    content: '🖤';
+}
+
+body.dark {
+    color: #a8acb0;
+    background: #1b1f23;
+    transition: all 0.5s ease;
+}
+
+body.dark .btn::before {
+    content: '💡';
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    justify-content: space-evenly;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(315deg, #89dbb9 0%, #cbcedb 74%);
+    height: 5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+input {
+    margin-right: 2rem;
+}
+
+input,
+select {
+    font-size: 1.7rem;
+    border: none;
+    background: transparent;
+}
+
+#rate-detail {
+    font-size: 1.8rem;
+    border-bottom: 3px dotted #035d66;
+}
+
+.footer {
+    font-size: 1.2rem;
+    position: relative;
+    bottom: -2rem;
+    letter-spacing: 1px;
+}
+
+.footer>a {
+    text-decoration: none;
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background: linear-gradient(0deg, #ffd42f, #d3aeff); */
+    background-image: url(./images/img.jpg);
+    width: 30rem;
+    height: 20rem;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.track-title {
+    font-size: 2.2rem;
+    margin-bottom: -5rem;
+    text-align: center;
+}
+
+.track-artist {
+    font-size: 1.7rem;
+    margin-top: 120px;
+}
+
+.footer {
+    font-size: 1.2rem;
+    position: relative;
+    bottom: -2rem;
+}
+
+.containercal {
+    /* width: 28rem;
+  height: 50rem; */
+    background-color: var(--bg);
+    border-radius: 2rem;
+}
+
+.screen {
+    height: 35%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    padding: 2rem;
+    letter-spacing: 1.5px;
+}
+
+.calc {
+    font-size: 1.6rem;
+}
+
+.result {
+    font-size: 3rem;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.controls {
+    height: 65%;
+    background: #8b0d0d;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: var(--btn-bg);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    width: 5rem;
+    font-size: 2.2rem;
+    margin-bottom: 1.3rem;
+    transition: background-color 0.2s ease;
+    outline: none;
+    /* Bad for assesibility */
+}
+
+button:hover,
+button:active {
+    background-color: #20232b;
+}
+
+.btn-green {
+    color: var(--btn-green);
+}
+
+.btn-green.clear {
+    width: 11.2rem;
+}
+
+.btn-red {
+    color: var(--btn-red);
+}
